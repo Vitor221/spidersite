@@ -9,7 +9,7 @@
             </div>
           </transition>
           <transition name="intro">
-            <form v-if="showLogin" class="relative px-40 py-20 w-90 border-b-2 border-t-2 border-t-orange-400 border-b-blue-700 rounded-md flex flex-col ml-96 text-white bg-gradient-to-r from-zinc-800 to-indigo-950">
+            <form @submit.prevent="" v-if="showLogin" class="shadow relative px-40 py-20 w-90 border-b-2 border-t-2 border-t-orange-400 border-b-blue-700 rounded-md flex flex-col ml-96 text-white bg-gradient-to-r from-zinc-800 to-indigo-950">
               <h2 class="mb-16 text-3xl font-bold tracking-widest">Login</h2>
               <div class="flex flex-col">
                 <label class="mb-2 text-xl font-bold">Usuário</label>
@@ -21,7 +21,7 @@
                 <input class="w-64 rounded outline-none text-black py-1 px-2" type="password">
               </div>
 
-              <span><a class="hover:text-amber-500 transition duration-200" href=""> não possui uma conta? </a></span>
+              <span><router-link class="hover:text-amber-500 transition duration-300 ease-in" :to="{ name: 'register' }" >não possui uma conta?</router-link></span>
 
               <button type="submit" class="font-bold tracking-widest w-28 m-auto py-2 rounded-md mt-16 bg-amber-500 ease-in transition duration-300 hover:scale-105 hover:bg-indigo-900">ENTRAR</button>
             </form>
@@ -53,6 +53,10 @@ export default {
 <style scoped>
 .background-ajuste {
   background-size: cover;
+}
+
+.shadow {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
 }
 
 .intro-enter-from, .intro-leave-to {
