@@ -24,7 +24,6 @@
       </form>
     </div>
     <router-link class="flex justify-center bg-blue-500 text-center text-2xl tracking-widest text-white font-bold hover:bg-blue-400" :to="{ name: 'login' }"><ArrowLeftCircleIcon class="h-7 w-7 absolute left-0 ml-2 mt-0.5"/> Voltar</router-link>
-
   </div>
 </template>
 
@@ -32,13 +31,14 @@
 import bgSpiderRegister from '@/assets/img/register/bg-spiderverse-register.jpg'
 import { ArrowLeftCircleIcon } from '@heroicons/vue/24/solid'
 
+
 export default {
   name: 'Register',
   components: {
-    ArrowLeftCircleIcon
+    ArrowLeftCircleIcon,
   },
   data: () => ({
-    bgRegister: bgSpiderRegister
+    bgRegister: bgSpiderRegister,
   })
 }
 </script>

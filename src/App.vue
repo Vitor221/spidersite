@@ -15,5 +15,6 @@ export default {
 
 body {
   font-family: 'Barlow', sans-serif;
+  background-color: #202020;
 }
 </style>
