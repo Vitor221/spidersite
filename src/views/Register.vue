@@ -4,18 +4,23 @@
       <h2 class="mb-10 mt-4 text-3xl text-blue-500 font-bold tracking-wider underline decoration-3">Cadastro</h2>
       <form class="px-24 py-10" @submit.prevent="">
         <div class="mb-4">
+          <label>Nome: </label>
           <input class="rounded-sm placeholder-black text-black border-b-2 bg-transparent border-b-blue-700 px-2 py-1 outline-none" type="text" placeholder="Digite seu nome">
         </div>
         <div class="mb-4">
+          <label>E-mail: </label>
           <input class="rounded-sm placeholder-black text-black border-b-2 bg-transparent border-b-blue-700 px-2 py-1 outline-none" type="email" placeholder="Digite seu email">
         </div>
         <div class="mb-4">
+          <label>Senha: </label>
           <input class="rounded-sm placeholder-black text-black border-b-2 bg-transparent border-b-blue-700 px-2 py-1 outline-none" type="password" placeholder="Digite sua senha">
         </div>
         <div class="mb-4">
+          <label>Telefone: </label>
           <input class="rounded-sm placeholder-black text-black border-b-2 bg-transparent border-b-blue-700 px-2 py-1 outline-none" type="text" placeholder="Digite seu telefone">
         </div>
         <div class="mb-4">
+          <label>Data de nascimento: </label>
           <input class="rounded-sm placeholder-black text-black border-b-2 bg-transparent border-b-blue-700 px-2 py-1 outline-none" type="date" placeholder="Digite sua data de nascimento">
         </div>
         <div class="flex justify-center">
