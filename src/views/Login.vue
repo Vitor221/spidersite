@@ -1,8 +1,4 @@
 <template>
-  <!-- <div
-    :style="{ backgroundImage: 'url(' + downSpider + ')' }"
-    class="background-ajuste"
-  > -->
     <div>
       <video autoplay muted loop id="video-background">
         <source :src="videoBackground" type="video/mp4" />
@@ -57,13 +53,16 @@
                 >não possui uma conta?</router-link
               ></span
             >
-
-            <button
-              type="submit"
-              class="font-bold tracking-widest w-28 m-auto py-2 rounded-md mt-16 bg-amber-500 ease-in transition duration-300 hover:scale-105 hover:bg-indigo-900"
-            >
-              ENTRAR
-            </button>
+            
+            <router-link class="w-0" :to="{ name: 'home' }">
+              <button
+                type="submit"
+                class="font-bold tracking-widest w-28 m-auto py-2 rounded-md mt-16 bg-amber-500 ease-in transition duration-300 hover:scale-105 hover:bg-indigo-900"
+              >
+                ENTRAR
+              </button>
+            </router-link>
+            
 
           </form>
         </transition>
